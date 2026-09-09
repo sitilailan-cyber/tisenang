@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TI SENANG - Sistem Pembelajaran Adaptif & Menggembirakan</title>
+    <meta name="description" content="Teknologi Inovatif untuk Sistem Pembelajaran Adaptif dan Menggembirakan" />
+    <meta property="og:title" content="TI SENANG - Sistem Pembelajaran Adaptif & Menggembirakan" />
+    <meta property="og:description" content="Teknologi Inovatif untuk Sistem Pembelajaran Adaptif dan Menggembirakan" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/jpeg" href="/logo-ti-senang.jpg" />
+    <link rel="apple-touch-icon" href="/logo-ti-senang.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#4f46e5" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  </head>
+  <body class="font-sans antialiased selection:bg-pink-500 selection:text-white bg-slate-50 text-slate-900">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch((err) => {
+            console.warn('Service worker registration failed:', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
+

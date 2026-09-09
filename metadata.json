@@ -1,0 +1,6 @@
+{
+  "name": "TI SENANG",
+  "description": "Teknologi Inovatif untuk Sistem Pembelajaran Adaptif dan Menggembirakan",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
